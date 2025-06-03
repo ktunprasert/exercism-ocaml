@@ -1,3 +1,2 @@
-open Base
-
-let reverse_string = String.rev
+let reverse_string str =
+  String.init (String.length str) (fun i -> str.[String.length str - 1 - i])
